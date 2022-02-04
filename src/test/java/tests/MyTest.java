@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class MyTest {
 
     @Test
-    public void userCanLoginByUsername() {
+    public void test() {
         open("https://www.google.ru/");
         $(By.name("q")).setValue("Ведьмак").pressEnter();
         $(By.linkText("Ведьмак")).click();
