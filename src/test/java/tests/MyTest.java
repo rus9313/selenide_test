@@ -15,4 +15,11 @@ public class MyTest {
         $(By.name("q")).setValue("Ведьмак").pressEnter();
         $(By.linkText("Ведьмак")).click();
     }
+
+    @Test
+    public void test2() {
+        open("https://www.google.ru/");
+        $(By.name("q")).setValue("Ведьмак 2").pressEnter();
+        $(By.linkText("Ведьмак 2")).click();
+    }
 }
